@@ -1,0 +1,22 @@
+<html ng-app="playersApp">
+<head></head>
+<body>
+<div ng-controller="playersController">
+<h1> There are {{players.length}} players</h1>
+<ul>
+<li ng-repeat="player in players">
+{{player.name}}
+</ul>
+<form ng-submit="createPlayer()">
+<input type="text" placeholder="Player Name" ng-model="playerName"></input>
+ <button type="submit">Add</button> 
+</form>
+</div>
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular-resource.js"></script>
+<script type="text/javascript" src="/js/players-controller.js"></script>
+
+</body>
+
+</html>
