@@ -1,0 +1,9 @@
+{
+  "name": "ListUsers",
+  "version": "1.0.0-SNAPSHOT",
+  "dependencies": {
+    "body-parser": "^1.12.2",
+    "express": "^4.12.3",
+    "request-json": "^0.5.2"
+  }
+}
