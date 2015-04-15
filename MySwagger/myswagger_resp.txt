@@ -1,0 +1,110 @@
+{
+	"swagger": "2.0",
+	"info": 
+	{
+		"description": "This is a xx API Server.",
+		"version": "1.0.0",
+		"title": "xxxx Platform"
+	},
+
+	"host": "xxx.xx.com",
+	"basePath": "/xx/xx",
+	"tags": 
+	[
+		{
+			"name": "account",
+			"description": "Everything about your Accounts"
+		}
+	],
+
+	"schemes": 
+	[
+		"https"
+	],
+
+	"paths": 
+	{
+		"/xxxx/xx": 
+		{
+			"post": 
+			{
+				"tags": 
+				[
+					"account"
+				],
+
+				"consumes": 
+				[
+					"application/json",
+					"application/xml"
+				],
+
+				"produces": 
+				[
+					"application/xml",
+					"application/json"
+				]
+			},
+			"get": 
+			{
+				"tags": 
+				[
+					"account"
+				],
+
+				"consumes": 
+				[
+					"application/json",
+					"application/xml"
+				],
+
+				"produces": 
+				[
+					"application/xml",
+					"application/json"
+				]
+			}
+		},
+		"/xxxx/xx": 
+		{
+			"post": 
+			{
+				"tags": 
+				[
+					"account"
+				],
+
+				"consumes": 
+				[
+					"application/json",
+					"application/xml"
+				],
+
+				"produces": 
+				[
+					"application/xml",
+					"application/json"
+				]
+			},
+			"get": 
+			{
+				"tags": 
+				[
+					"account"
+				],
+
+				"consumes": 
+				[
+					"application/json",
+					"application/xml"
+				],
+
+				"produces": 
+				[
+					"application/xml",
+					"application/json"
+				]
+			}
+		}
+	}
+}
