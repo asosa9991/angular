@@ -1,0 +1,58 @@
+<html ng-app="playersApp">
+<head>
+<script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+
+<link rel="stylesheet"
+	href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+
+<!-- Optional theme -->
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+
+<!-- Latest compiled and minified JavaScript -->
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+<script type="text/javascript"
+	src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.js"></script>
+<script type="text/javascript"
+	src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular-resource.js"></script>
+<script type="text/javascript" src="/js/players-controller.js"></script>
+
+
+</head>
+<body>
+
+
+	<div ng-controller="playersController">
+
+		<div class="row">
+			<div class="col-xs-2 col-center-block">
+				<input class="form-control" type="text" placeholder="search title"
+					ng-model="name">
+			</div>
+		</div>
+
+
+		<div ng-repeat="player in players">
+			<div ng-repeat="items in player">
+				<div class="col-lg-2 col-sm-3 col-xs-4"
+					ng-repeat="item in items |filter: name"">
+					<a
+						href="https://www.youtube.com/watch?v={{item.snippet.resourceId.videoId}}"
+						target="_blank"> <img
+						src="https://i.ytimg.com/vi/{{item.snippet.resourceId.videoId}}/movieposter.jpg"
+						class="thumbnail img-responsive">
+					</a>
+				</div>
+			</div>
+		</div>
+
+	</div>
+</body>
+
+</html>
